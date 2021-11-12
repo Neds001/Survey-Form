@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>COVID-19 VACCINATED SURVEY FORM</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+	<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">COVID-19 Vaccinated Survey Form</h1>
+    <p id="description" class="description text-center">
+      Thank you for taking the time to answer this platform
+    </p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your Email"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >Age<span class="clue">(optional)</span></label
+      >
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="150"
+        class="form-control"
+        placeholder="Age"
+      />
+    </div>
+    <div class="form-group">
+      <p>Gender</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Select gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      required</select>
+    </div>
+
+    <div class="form-group">
+      <p>What type of vaccine was given to you?</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="Pfizer"
+          type="radio"
+          class="input-radio"
+          checked
+        />Pfizer</label
+      >
+      <label>
+        <input
+          name="user-recommend"
+          value="Astra"
+          type="radio"
+          class="input-radio"
+               
+        />AstraZeneca</label
+      >
+      <label
+        ><input
+          name="user-recommend"
+          value="Sinovac"
+          type="radio"
+          class="input-radio"
+        />Sinovac</label>
+      <label
+        ><input
+          name="user-recommend"
+          value="Sputnik"
+          type="radio"
+          class="input-radio"
+        />Sputnik V</label>
+      <label
+        ><input
+          name="user-recommend"
+          value="Janssen"
+          type="radio"
+          class="input-radio"
+        />Janssen</label>
+      <label
+        ><input
+          name="user-recommend"
+          value="Bharat"
+          type="radio"
+          class="input-radio"
+        />Bharat</label>
+      <label
+        ><input
+          name="user-recommend"
+          value="Moderna"
+          type="radio"
+          class="input-radio"
+        />Moderna</label>
+      <label
+        ><input
+          name="user-recommend"
+          value="Novavax"
+          type="radio"
+          class="input-radio"
+        />Novavax</label>
+    </div>
+
+    
+    <div class="form-group">
+      <p>
+        Symptoms you have experienced after getting the vaccine?
+        <span class="clue">(Check all that apply)</span>
+      </p>
+
+      <label
+        ><input
+          name="prefer"
+          value="pain"
+          type="checkbox"
+          class="input-checkbox"
+        />Pain where you had your injection</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="ache"
+          type="checkbox"
+          class="input-checkbox"
+        />Headache or muscle ache</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="joint pain"
+          type="checkbox"
+          class="input-checkbox"
+        />Joint pain</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="chills"
+          type="checkbox"
+          class="input-checkbox"
+        />Chills(an involuntary bodily response that involves shivering, trembling, and shaking)</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="nausea or vomiting"
+          type="checkbox"
+          class="input-checkbox"
+        />Nausea or vomiting</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="feeling tired"
+          type="checkbox"
+          class="input-checkbox"
+        />Feeling tired</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="fever"
+          type="checkbox"
+          class="input-checkbox"
+        />Fever (temperature above 37.8°C)</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="convulsion"
+          type="checkbox"
+          class="input-checkbox"
+        />Convulsion (With or Without fever)</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="None"
+          type="checkbox"
+          class="input-checkbox"
+        />None</label
+      >
+      
+    </div>
+
+    <div class="form-group">
+      <p>What would you suggest to people who are not yet vaccinated?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
